@@ -2,11 +2,11 @@ import streamlit as st
 import pickle
 
 # Load model
-with open("best_model.pkl","rb") as file:
+with open("best_model.pkl","wb") as file:
     model = pickle.load(file)
 
 # Load vectorizer
-with open("tfidf_vectorizer.pkl","rb") as file:
+with open("tfidf_vectorizer.pkl","wb") as file:
     vectorizer = pickle.load(file)
 
 st.title("Customer Support Ticket Classification")
