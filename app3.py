@@ -2,7 +2,7 @@ import streamlit as st
 import pickle
 
 # Load model
-with open("trained_model.pkl","rb") as file:
+with open("best_model.pkl","rb") as file:
     model = pickle.load(file)
 
 # Load vectorizer
